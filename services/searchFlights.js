@@ -1,5 +1,5 @@
 // ========== services/searchFlights.js ==========
-module.exports = function searchFlights(params, flights) {
+export default function searchFlights(params, flights) {
   const {
     departure,
     arrival,

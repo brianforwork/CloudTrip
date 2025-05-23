@@ -1,9 +1,9 @@
 // index.js
-const express = require("express");
+import express from "express";
 const app = express();
 const port = 3000;
 
-const flightRoutes = require("./routes/flights");
+import flightRoutes from "../myapp/routes/flights.js";
 
 app.use(express.json());
 app.use("/flights", flightRoutes);
@@ -15,4 +15,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
-
