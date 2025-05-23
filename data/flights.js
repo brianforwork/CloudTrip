@@ -1,5 +1,5 @@
 // ========== data/flights.js ==========
-module.exports = [
+const flights = [
     {
       flight_id: "FT2308163234",
       departure: "hcm_city",
@@ -15,4 +15,6 @@ module.exports = [
       end_date: "2029-10-10"
     }
 ];
+
+export default flights;
   
